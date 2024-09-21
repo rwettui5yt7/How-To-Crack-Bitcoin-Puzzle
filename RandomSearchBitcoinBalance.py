@@ -1,10 +1,10 @@
 import bit
 import random
-x=int(input("'start range Min 1-115792089237316195423570985008687907852837564279074904382605163141518161494335 -> "))
-y=int(input("stop range Max 115792089237316195423570985008687907852837564279074904382605163141518161494336 -> "))
+x=int(input("'start range Min 1-0000000000000000000000000000000000000000000100000000000000000000 -> "))
+y=int(input("stop range Max 00000000000000000000000000000000000000000001ffffffffffffffffffff -> "))
 k = 1
 while True:
-    key = bit.Key.from_int(random.randint(x,y))
+    key = bit.Key.from_int(random.randint(x,y)
     ran = 0
     print(key.address + ' : ' + key.to_hex() + ' : ' + key.get_balance('mbtc')) # btc mbtc usd
     if key.get_balance('mbtc') > str(ran)  :
